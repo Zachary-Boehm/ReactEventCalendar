@@ -16,7 +16,7 @@ function App() {
         <Route path='/'><Redirect to='/Calendar' /></Route>
         <Route path='/Calendar' render={(props) => (
           <>
-            <Calendar days={31}/>
+            <Calendar />
           </>
         )} />
         <Route path='/Events' component={Events} />

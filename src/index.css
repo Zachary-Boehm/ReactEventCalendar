@@ -46,7 +46,8 @@ h2{
   margin-left: 1.7rem;
 }
 .orangeImage{
-  filter: invert(36%) sepia(97%) saturate(1173%) hue-rotate(328deg) brightness(99%) contrast(91%);
+  height: 4rem;
+  width: 4rem;
 }
 
 .btn{
@@ -72,69 +73,83 @@ h2{
   background: #F15152;
 }
 
-.calendarContainer{
+.calendar-container{
+  
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.calendarArea{
-  width: 50%;
-  min-height: 75vh;
 
-  margin-bottom: 10rem;
-  border-bottom-right-radius: 1.5rem;
-  border-bottom-left-radius: 1.5rem;
-  padding: .5rem;
-
-
-  display: flex;
-  justify-content: center;
-}
-.dateSelector{
-  width: 50%;
-  height: 5rem;
-  margin-top: 6rem;
+.month-header{
+  width: 52%;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.month-text{
+  margin: 2rem;
+  font-size: 4rem;
+}
+.calendar{
+  width: 50%;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  border-radius: 5px;
   background-color: #1D1E2C;
 
-  border-top-right-radius: 1.5rem;
-  border-top-left-radius: 1.5rem;
-  padding: .5rem;
-}
-.date{
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 15rem;
-  border-radius: 1rem;
+  flex-direction: column;
 }
-.calendarDay{
-  width: 1rem;
-  height: 1rem;
+.calendar-inner{
+  width: 98%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-collapse: seperate;
+  border-spacing: 0;
+  table-layout: fixed;
 }
+.Day{
+  height: 11rem;
+  background-color: #282a3e;
+  padding-left: 1rem;
+  border:1px solid rgb(24, 25, 37);
+  border-radius: 1px;
+}
+.fillerRow{
+  height: 2rem;
+}
+.curDay{
+  background-color: #383a57;
+}
+.day-container{
+  width: 100%;
+  height: 100%;
+}
+.day-text{
+  font-size: 2.5rem;
+}
+
 .week-day{
-  width: 14%;
+  width: 5rem;
   height: 5rem;
-  border-top: 1px solid #F15152;
-  border-bottom: 1px solid #F15152;
-
   color: #f0f0f0;
-  font-size: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center
-
+  font-size: 3.5rem;
+  border-bottom: 1px solid #F15152;
+  border-top: 1px solid #F15152;
+  padding: 1rem 2.25rem 1rem 2.25rem;
 }
+
 .week-day:first-child{
-  border-top-left-radius: 1rem;
-  border-bottom-left-radius: 1rem;
   border-left: 1px solid #F15152;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 .week-day:last-child{
-  border-top-right-radius: 1rem;
-  border-bottom-right-radius: 1rem;
   border-right: 1px solid #F15152;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
